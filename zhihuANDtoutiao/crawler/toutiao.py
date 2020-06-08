@@ -90,7 +90,8 @@ class toutiaocrawler():
 
     def main(self,query):
         z_test = 0
-        f = open('../data/toutiao/'+str(query)+str(datetime.datetime.now)+'.txt', 'w+',encoding="utf-8")
+        # f = open('../data/toutiao/'+str(query)+str(datetime.datetime.now)+'.txt', 'w+',encoding="utf-8")
+        all_list =[]
         while True:
             z_test+=1
             url = self.get_json(query,self.offset)
@@ -116,11 +117,18 @@ class toutiaocrawler():
                     except:
                         comment_url=i['id']
                         comment_list_ = self.get_comment(comment_url, 2)
-                    f.write(str(mid) + ',' + str(times) + ',' + str(comment_list_)+'\n')
+
+                    all_list.append((mid,times,comment_list_))
+                    # print(str(mid) + ',' + str(times) + ',' + str(comment_list_)+'\n')
+                    # f.write(str(mid) + ',' + str(times) + ',' + str(comment_list_)+'\n')
                 except KeyError:
                     pass
+            # if z_test==1:
+            #     break
             time.sleep(5)
-        f.close()
+
+        return all_list
+        # f.close()
 
 if __name__ == '__main__':
     query = input('请输入想要查询的东西')
