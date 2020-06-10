@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b9d5352-14bd-48f2-acde-62514b165c26" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MYproject/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/.idea/MYproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/.idea/MYproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/crawler/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/crawler/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/crawler/all.py" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/crawler/all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/crawler/toutiao.py" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/crawler/toutiao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/data/toutiao/新冠疫情.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/data/toutiao/新冠疫情.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/data/toutiao/特朗普.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/data/toutiao/特朗普.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/data/toutiao/特朗普20200606122312395150.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/data/toutiao/特朗普20200606122312395150.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/process/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/process/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/process/data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/process/data_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/process/train_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/process/train_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MYproject/疫情数据集下载链接.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MYproject/疫情数据集下载链接.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/crawls/search/requests.seen" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/crawls/search/requests.seen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/scrapy.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/weibo/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/weibo/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/weibo/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/weibo/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/weibo/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/weibo/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/weibo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/weibo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/weibo/spiders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/weibo/spiders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/weibo/spiders/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/weibo/spiders/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/weibo/utils/region.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/weibo/utils/region.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibocrawl/weibo/utils/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibocrawl/weibo/utils/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/.idea/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/1后台.py" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/1后台.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/可视化代码/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/可视化代码/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/可视化代码/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/可视化代码/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/可视化代码/词云/basic_wordcloud.html" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/可视化代码/词云/basic_wordcloud.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/可视化代码/词云/data/Raw_data/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/可视化代码/词云/data/Raw_data/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/可视化代码/词云/data/target.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/可视化代码/词云/data/target.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/可视化代码/词云/data/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/可视化代码/词云/data/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/可视化代码/词云/data/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/可视化代码/词云/data/test1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/可视化代码/词云/read_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/可视化代码/词云/read_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl_work/可视化代码/词云/word_cloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/ycl_work/可视化代码/词云/word_cloud.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MYproject/crawler/toutiao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MYproject/crawler/toutiao.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Innovation_training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Innovation_training" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Innovation_training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Innovation_training" type="462c0819:PsiDirectoryNode" />
+              <item name="MYproject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Innovation_training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Innovation_training" type="462c0819:PsiDirectoryNode" />
+              <item name="MYproject" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Innovation_training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Innovation_training" type="462c0819:PsiDirectoryNode" />
+              <item name="ycl_work" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b9d5352-14bd-48f2-acde-62514b165c26" name="Default Changelist" comment="" />
+      <created>1591610357694</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591610357694</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MYproject/crawler/toutiao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

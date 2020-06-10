@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="ScoopThemes">
+<meta name="ROBOTS" content="">
+<meta name="description" content="">
+<meta name="abstract" content="">
+
+<title>Home</title>
+
+<!-- Bootstrap -->
+<link href="../static/search/css/bootstrap.css" rel="stylesheet">
+<link href="../static/search/css/font-awesome.css" rel="stylesheet">
+<link href="../static/search/css/bootstrap-theme.css" rel="stylesheet">
+<link rel="stylesheet" href="../static/search/css/animations.css">
+
+<!-- siimple style -->
+<link href="../static/search/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="cloud floating">
+	<img src="../static/search/img/cloud.png" alt="Scoop Themes">
+</div>
+
+<div class="cloud pos1 fliped floating">
+	<img src="../static/search/img/cloud.png" alt="Scoop Themes">
+</div>
+
+<div class="cloud pos2 floating">
+	<img src="../static/search/img/cloud.png" alt="Scoop Themes">
+</div>
+
+<div class="cloud pos3 fliped floating">
+	<img src="../static/search/img/cloud.png" alt="Scoop Themes">
+</div>
+
+
+<div id="wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<img src="../static/search/img/logo.png" alt="Scoop Themes Logo">
+				<br/>
+				<br/>
+				<h2 class="subtitle">生 成 舆 情 分 析</h2>
+				<br/>
+		 
+				<form action="/wordcloud" method="post">
+					<div class="form-group">
+						<input type="emailadf" class="form-control" name="email1" placeholder="输入姓名\身份证号\手机号">
+					</div>
+					<input type="submit" name="subscribe" value="Get notified!"  class="btn btn-theme">
+				</form>
+				<br/>
+			</div>
+			<div class="col-sm-12 align-center">
+				<ul class="social-network social-circle">
+					<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li><a href="#" class="icoGit" title="Github"><i class="fa fa-github"></i></a>
+					</li>
+					<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3">
+				<p class="copyright">Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="../static/search/js/jquery-1.8.3.min.js"></script>
+<script src="../static/search/js/jquery.form-n-validate.js"></script>
+<script>
+
+$(document).ready( function () {
+$('#wrapper').height($(document).height());
+// I only have one form on the page but you can be more specific if need be.
+
+});
+
+
+
+
+
+</script>
+
+</body>
+</html>
