@@ -39,23 +39,23 @@ def query(sql,*args):
     close_conn(conn, cursor)
     return res
 
-def get_predict():
-    sql = "select ds,emotion_val,topic from emotion_val where predict=1 order by ds"
+def get_predict(plat):
+    sql = "select ds,emotion_val,topic, platform from emotion_val where predict=1 and platform =%s order by ds"%plat
     res = query(sql)
     return res
 
-def get_emotion_val():
-    sql = "select ds,emotion_val,topic,predict from emotion_val order by predict"
+def get_emotion_val(plat):
+    sql = "select ds,emotion_val,topic,predict from emotion_val where platform =%s order by predict"%plat
     res = query(sql)
     return res
 
-def get_rawdata():
-    sql = "select context,ds,topic from raw_data "
+def get_rawdata(plat):
+    sql = "select context,ds,topic from raw_data where platform =%s "%plat
     res = query(sql)
     return res
 
-def get_midrawdata():
-    sql = "select ds,emotion_val,topic from emotion_val where predict=0 order by ds"
+def get_midrawdata(plat):
+    sql = "select ds,emotion_val,topic from emotion_val where predict=0 and platform =%s order by ds"%plat
     res = query(sql)
     return res
 
