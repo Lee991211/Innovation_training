@@ -47,4 +47,4 @@ def insert_emotionval(filepath,url):
     r = requests.post(url, raw_data)
 
 insert_rawdata(r'C:\Users\Lee\PycharmProjects\inno_train\data_post\rawdata.csv','http://127.0.0.1:5000/insert_rawdata')
-insert_emotionval(r'C:\Users\Lee\PycharmProjects\inno_train\data_post\midddata.csv','http://127.0.0.1:5000/insert_emotionval')
+insert_emotionval(r'C:\Users\Lee\PycharmProjects\inno_train\data_post\middata.csv','http://127.0.0.1:5000/insert_emotionval')

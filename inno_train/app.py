@@ -21,30 +21,34 @@ class rawdata(db.Model):
     ds = db.Column(db.String())
     # ds = db.Column(db.Date())
     topic = db.Column(db.String())
-    def __init__(self, context, ds,topic):
+    platform = db.Column(db.String())
+    def __init__(self, context, ds,topic,platform):
+        self.platform = platform
         self.ds = ds
         self.topic = topic
         self.context = context
         # self.id = id
 
     def __repr__(self):
-        return '<rawdata:%s %s %s %s>' % (self.id,self.context,self.ds,self.topic)
+        return '<rawdata:%s %s %s %s>' % (self.context,self.ds,self.topic,self.platform,self.platform)
 class emotion_val(db.Model):
     __tablename__ = 'emotion_val'
     id = db.Column(db.Integer,primary_key=True)
     predict= db.Column(db.Integer())
     emotion_val = db.Column(db.String())
     ds = db.Column(db.String())
+    platform = db.Column(db.String())
     # ds = db.Column(db.Date())
     topic = db.Column(db.String())
-    def __init__(self, emotion_val, ds,topic,predict):
+    def __init__(self, emotion_val, ds,topic,predict,platform):
+        self.platform = platform
         self.emotion_val = emotion_val
         self.predict = predict
         self.ds = ds
         self.topic = topic
 
     def __repr__(self):
-        return '<rawdata:%s %s %s %s>' % (self.emotion_val,self.ds,self.topic,self.predict)
+        return '<rawdata:%s %s %s %s>' % (self.emotion_val,self.ds,self.topic,self.predict,self.platform)
 
 @app.route('/')
 def hello_world():
@@ -53,7 +57,8 @@ def hello_world():
 #获取预测数据的接口
 @app.route('/get_predict')
 def get_predict():
-    data = utils.get_predict()
+    para = request.args.get('platform')
+    data = utils.get_predict(para)
     ds=[]
     emotion_val=[]
     topic = []
@@ -67,7 +72,8 @@ def get_predict():
 #获取预测数据和二次处理后真实数据两者的接口
 @app.route('/get_emotionval')
 def get_emotionval():
-    data = utils.get_emotion_val()
+    para = request.args.get('platform')
+    data = utils.get_emotion_val(para)
     ds=[]
     emotion_val=[]
     topic = []
@@ -82,13 +88,15 @@ def get_emotionval():
 #获取爬虫爬取数据数据的接口，杨涛用
 @app.route('/get_rawdata')
 def get_rawdata():
-    data = utils.get_rawdata()
+    para = request.args.get('platform')
+    data = utils.get_rawdata(para)
+    # print(data)
     ds = []
-    id = []
+    platform = []
     context=[]
     topic=[]
     for each in data:
-        print(each)
+        # print(each)
         ds.append(each[1])
         context.append(each[0])
         topic.append(each[2])
@@ -98,7 +106,8 @@ def get_rawdata():
 #获取二次处理后真实数据的接口，杨秀辉用
 @app.route('/get_midrawdata')
 def get_midrawdata():
-    data = utils.get_midrawdata()
+    para = request.args.get('platform')
+    data = utils.get_midrawdata(para)
     ds = []
     emotion_val=[]
     topic=[]
@@ -117,14 +126,14 @@ def insert_rawdata():
     print("This is a "+request.method+" method!")
     #先将收到json数据的编码格式从bytes改成utf-8
     rawdata_json = request.data.decode('utf-8')
-    print(rawdata_json)
+    # print(rawdata_json)
     #json.loads()将json格式的数据解码为python的dict格式数据
     #json.dumps()将python的dict格式的数据编码为json格式数据
     rawdata_dict = json.loads(rawdata_json)
-    print(type(rawdata_dict))
+    # print(type(rawdata_dict))
     for raw in rawdata_dict['data']:
         # print(raw)
-        db.session.add(rawdata( context=raw['context'], ds=raw['ds'], topic=raw['topic']))
+        db.session.add(rawdata( context=raw['context'], ds=raw['ds'], topic=raw['topic'], platform=raw['platform']))
     db.session.commit()
     return "ok"
 
@@ -137,17 +146,17 @@ def insert_emotionval():
     print("This is a "+request.method+" method!")
     #先将收到json数据的编码格式从bytes改成utf-8
     emoval_json = request.data.decode('utf-8')
-    print(emoval_json)
+    # print(emoval_json)
     #json.loads()将json格式的数据解码为python的dict格式数据
     #json.dumps()将python的dict格式的数据编码为json格式数据
     emoval_dict = json.loads(emoval_json)
-    print(type(emoval_dict))
+    # print(type(emoval_dict))
     # print ((rawdata_dict['ds']))
     # print(ds)
     # rawdata=request.data
     for raw in emoval_dict['data']:
         # print(raw)
-        db.session.add(emotion_val( emotion_val=raw['emotion_val'], ds=raw['ds'], topic=raw['topic'], predict=raw['predict']))
+        db.session.add(emotion_val( emotion_val=raw['emotion_val'], ds=raw['ds'], topic=raw['topic'], predict=raw['predict'], platform=raw['platform']))
     db.session.commit()
     return "ok"
 
