@@ -17,7 +17,6 @@ def GetLine(dataX, dataY, n=[0], T=0):
     chinaLine = (
         Line(init_opts=opts.InitOpts(theme=ThemeType.INFOGRAPHIC))
         .add_xaxis(dataX)
-
         .set_global_opts(
             title_opts=opts.TitleOpts(title=""),
             toolbox_opts=opts.ToolboxOpts(is_show=True),
