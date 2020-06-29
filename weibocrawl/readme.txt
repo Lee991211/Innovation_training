@@ -1,1 +1,1 @@
-wash存放结果文件，weibocrawl为爬虫文件
+data存放结果文件，weibocrawl为爬虫文件
