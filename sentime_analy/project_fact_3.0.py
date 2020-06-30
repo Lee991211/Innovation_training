@@ -81,7 +81,7 @@ def main():
                accessToken = getToken()
                last_getProEmotion(inputText,accessToken)
             else:
-                data = cut_text(inputText, 1500)  # 如果文章字节长度大于1500，则切分
+                data = cut_text(inputText, 1500)  # 如果文章字节长度大于1500，则切分，最好是取均值，这里不取
                 accessToken = getToken()
                 last_getProEmotion(data , accessToken)
 
