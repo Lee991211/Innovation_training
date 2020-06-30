@@ -13,7 +13,6 @@ sys.path.append("..")
 from Visualization.utils.setting import *
 
 
-
 # 数据库的读取
 class DbReader:
     conn = pymysql.connect(
@@ -73,6 +72,14 @@ class ReadCsv:
             print("WRITE IS WRONG! Bc:{}".format(ex))
             return -1
 
+
+def readTxt(name):
+    try:
+        inputs = open("{}{}".format(FileReadPath, name), 'r', encoding='utf-8')
+        return inputs
+    except Exception as ex:
+        print("READ IS WRONG! Bc:{}".format(ex))
+        return -1
 
 if __name__ == "__main__":
     settinghelp()

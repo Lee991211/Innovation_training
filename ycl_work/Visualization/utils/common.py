@@ -5,6 +5,7 @@
 # @File    : setting.py
 # @Software: PyCharm
 import json
+import re
 
 
 # list --> dict
@@ -37,4 +38,10 @@ def DictToJson(a):
 def KeepTwo(a):
     return a.split('.')[0] + '.' + str(a).split('.')[1][:2]
 
+
+# 去除掉汉字
+def find_unchinese(file):
+    pattern = re.compile(r'[\u4e00-\u9fa5]')
+    unchinese = re.sub(pattern, "", file)
+    print(unchinese)
 

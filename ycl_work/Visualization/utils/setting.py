@@ -18,7 +18,7 @@ mysqlbase = {
 # 读写相关文件文件的存储目录
 FileReadPath = '../data/source/'
 FileRTPath = '../data/target/'
-FileFeaturePath = "../data/feature/"
+FileFeaturePath = "../data/feature/baidu_stopwords.txt"
 
 
 # 打印当前所有设置
