@@ -16,14 +16,16 @@ def test1():
     if name == None:
         return render_template("index.html")
     else:
-        make_wordcloud()
-        return render_template("wordcloud/basic_wordcloud.html")
+        # 这里调用爬虫
+        return render_template("demo.html")
+
 
 @app.route('/wordcloud', methods=['GET', 'POST'], endpoint="/worldcloud")
 def test1():
     name = request.form.get('email1')
     a = make_wordcloud()
     return a
+
 
 app.run()
 

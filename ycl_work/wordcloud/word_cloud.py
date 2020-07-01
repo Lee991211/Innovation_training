@@ -12,8 +12,6 @@ from pyecharts.charts import WordCloud
 import pyecharts.options as opts
 
 
-
-
 # 去除掉汉字
 def find_unchinese(file):
     pattern = re.compile(r'[\u4e00-\u9fa5]')
@@ -21,11 +19,11 @@ def find_unchinese(file):
     print(unchinese)
 
 def make_wordcloud():
-    sourceTxt = 'wordcloud/data/test.txt'
-    source1Txt = 'wordcloud/data/test1.txt'
-    targetTxt = 'wordcloud/data/target.txt'
+    sourceTxt = '../wordcloud/data/test.txt'
+    source1Txt = '../wordcloud/data/test1.txt'
+    targetTxt = '../wordcloud/data/target.txt'
 
-    jieba.analyse.set_stop_words('wordcloud/data/baidu_stopwords.txt')
+    jieba.analyse.set_stop_words('../wordcloud/data/baidu_stopwords.txt')
     with open(sourceTxt, 'r', encoding='utf-8') as sourceFile, open(source1Txt, 'a+', encoding='utf-8') as targetFile:
         pattern = re.compile(r'[^\u4e00-\u9fa5]')
         for line in sourceFile:
@@ -58,6 +56,7 @@ def make_wordcloud():
             * withWeight : 是否返回关键词的权重值，默认为False
             * allowPOS : 包含指定词性的词，默认为空
         """
+        print(text)
         keywords = jieba.analyse.extract_tags(str(text), topK=30, withWeight=True, allowPOS=())
         print(keywords)
         for i in keywords:
@@ -79,4 +78,5 @@ def make_wordcloud():
     )
     return a.render_embed()
 
+make_wordcloud()
 
