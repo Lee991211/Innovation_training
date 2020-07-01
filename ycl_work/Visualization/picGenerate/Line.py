@@ -13,28 +13,35 @@ sys.path.append("..")
 from Visualization.dataProsc.readDbs import *
 
 
-def GetLine(dataX, dataY, n=[0], T=0):
+# x = [], y = [[],], n = [], T保留
+def Getline(dataX, dataY, n=[0], T=""):
     chinaLine = (
         Line(init_opts=opts.InitOpts(theme=ThemeType.INFOGRAPHIC))
         .add_xaxis(dataX)
+
         .set_global_opts(
-            title_opts=opts.TitleOpts(title=""),
+            title_opts=opts.TitleOpts(title="{}月情感变化{}".format(n[0], T)),
             toolbox_opts=opts.ToolboxOpts(is_show=True),
-            datazoom_opts=[opts.DataZoomOpts(), opts.DataZoomOpts(type_="inside")],
+
+        )
+        .set_series_opts(
+
+            label_opts=opts.LabelOpts(is_show=False),
         )
     )
     for i in range(len(dataY)):
-        chinaLine.add_yaxis('{}月情感变化'.format(n[i]), dataY[i], is_symbol_show=True, label_opts=opts.LabelOpts(is_show=True),
+        chinaLine.add_yaxis('{}月情感变化'.format(n[i]), dataY[i], is_symbol_show=False, label_opts=opts.LabelOpts(is_show=True),
                             markline_opts=opts.MarkLineOpts(
                                 data=[
                                     opts.MarkLineItem(type_="average", name="平均值"),
                                     opts.MarkLineItem(symbol="none", x="90%", y="max"),
-                                    opts.MarkLineItem(symbol="circle", type_="max", name="最高点"),
+                                    # opts.MarkLineItem(symbol="circle", type_="max", name="最高点"),
                                 ]
                             ),
                         markpoint_opts=opts.MarkPointOpts(data=[opts.MarkPointItem(type_="max"), ]), is_smooth=True)
-    # return chinaLine.render_embed()
+    #
     chinaLine.render()
+    return chinaLine.render_embed()
 
 
 if __name__ == "__main__":
@@ -51,5 +58,4 @@ if __name__ == "__main__":
         l2.append(ll)
         print(l1)
         print(l2)
-        GetLine(l1, l2)
     # GetLine([0, 1, 2, 3, 4], [[2, 1, 5, 2, 6]])

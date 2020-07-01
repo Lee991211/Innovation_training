@@ -56,7 +56,7 @@ class ReadCsv:
 
     def loadcsv(self, name):
         try:
-            f = csv.reader(open("{}{}".format(self.FileReadPath, name), 'r'))
+            f = csv.reader(open("{}{}".format(self.FileReadPath, name), 'r', encoding='utf-8'))
             dataset = list(f)
             return dataset
         except Exception as ex:
@@ -80,6 +80,7 @@ def readTxt(name):
     except Exception as ex:
         print("READ IS WRONG! Bc:{}".format(ex))
         return -1
+
 
 if __name__ == "__main__":
     settinghelp()

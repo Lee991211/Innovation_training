@@ -7,7 +7,7 @@
 
 import sys
 sys.path.append("..")
-from Visualization.picGenerate.Line import GetLine
+from Visualization.picGenerate.Line import Getline
 from Visualization.dataProsc.readDbs import *
 from Visualization.dataProsc.dataPro import dataForPridic
 
@@ -31,19 +31,19 @@ def testcsv():
     y.append(y2)
     print(y)
     n = [1, 3]
-    GetLine(x, y, n)
+    Getline(x, y, n)
 
 
 def testmysql():
     name = 'emotion_val'
-    data = dataForPridic(name, name)
+    data = dataForPridic(name, name, 1)
     y = []
     x = []
     y.append(data)
     for i in range(30):
         x.append(i)
-    n = [5]
-    GetLine(x, y, n)
+    n = [6]
+    Getline(x, y, n)
 
 
 testmysql()

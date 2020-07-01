@@ -36,7 +36,10 @@ def DictToJson(a):
 
 # 保留两位小数
 def KeepTwo(a):
-    return a.split('.')[0] + '.' + str(a).split('.')[1][:2]
+    if len(a)>2:
+        return a.split('.')[0] + '.' + str(a).split('.')[1][:2]
+    else:
+        return a
 
 
 # 去除掉汉字

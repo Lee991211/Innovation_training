@@ -16,18 +16,18 @@ sys.path.append("..")
 from Visualization.dataProsc.readDbs import *
 
 
-def getBar(dataX, dataY, n=[0], T=0):
+def getBar(dataX, dataY,n, T=""):
     theBar = (
         Bar(init_opts=opts.InitOpts(theme=ThemeType.INFOGRAPHIC))
         .add_xaxis(dataX)
         .set_global_opts(
-            title_opts=opts.TitleOpts(title=""),
+            title_opts=opts.TitleOpts(title="{}".format(T)),
             toolbox_opts=opts.ToolboxOpts(is_show=True),
-            datazoom_opts=[opts.DataZoomOpts(), opts.DataZoomOpts(type_="inside")],
+
         )
     )
     for i in range(len(dataY)):
-        theBar.add_yaxis('{}月情感变化'.format(n[i]), dataY[i], label_opts=opts.LabelOpts(is_show=True),
+        theBar.add_yaxis('{}'.format(n[i]), dataY[i], label_opts=opts.LabelOpts(is_show=False),
 
                         # markpoint_opts=opts.MarkPointOpts(data=[opts.MarkPointItem(type_="max"), ]), is_smooth=True
                          )

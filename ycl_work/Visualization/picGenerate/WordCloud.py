@@ -20,10 +20,10 @@ sys.path.append("..")
 def getWordCloud(keywords, name, T = 0):
     WC = (
         WordCloud(init_opts=opts.InitOpts(theme=ThemeType.INFOGRAPHIC))
-            .add(series_name="{}词云图".format(name), data_pair=keywords, word_size_range=[20, 80])
+            .add(series_name="{}词云图".format(name), data_pair=keywords, word_size_range=[40, 120])
             .set_global_opts(
             title_opts=opts.TitleOpts(
-                title="{}词云图".format(name), title_textstyle_opts=opts.TextStyleOpts(font_size=23)
+                title="{}词云图".format(name), title_textstyle_opts=opts.TextStyleOpts(font_size=30)
             ),
             tooltip_opts=opts.TooltipOpts(is_show=True),
         )

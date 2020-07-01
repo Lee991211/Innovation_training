@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts-wordcloud.min.js"></script>
         <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/infographic.js"></script>
 
 </head>
 <body>
-    <div id="fcfd1ea37069400b929f19444b589eff" class="chart-container" style="width:90%; height:500px;margin:auto;top:30px"></div>
+    <div id="aeb1a7a5318849cc8245041d03cf505f" class="chart-container" style="width:90%; height:500px;margin:auto;top:30px"></div>
     <script>
-        var chart_fcfd1ea37069400b929f19444b589eff = echarts.init(
-            document.getElementById('fcfd1ea37069400b929f19444b589eff'), 'infographic', {renderer: 'canvas'});
-        var option_fcfd1ea37069400b929f19444b589eff = {
+        var chart_aeb1a7a5318849cc8245041d03cf505f = echarts.init(
+            document.getElementById('aeb1a7a5318849cc8245041d03cf505f'), 'infographic', {renderer: 'canvas'});
+        var option_aeb1a7a5318849cc8245041d03cf505f = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,57 +24,297 @@
     "animationDelayUpdate": 0,
     "series": [
         {
-            "type": "bar",
-            "name": "0\u6708\u60c5\u611f\u53d8\u5316",
-            "data": [
-                "1.2",
-                "1",
-                "1.3",
-                "1.5",
-                "1.6",
-                "1.55",
-                "1.45",
-                "1.45",
-                "1.35",
-                "0.9",
-                "1.2",
-                "1.1",
-                "0.9",
-                "0.7",
-                "1.6",
-                "1.35",
-                "0.7",
-                "1.05",
-                "1.55",
-                "1.55",
-                "1.55",
-                "0.65",
-                "1.6",
-                "1.5",
-                "1.3",
-                "1.05",
-                "1.3",
-                "1.4",
-                "0.9",
-                "1.4",
-                ""
+            "type": "wordCloud",
+            "name": "\u5934\u6761\u8bcd\u4e91\u56fe",
+            "shape": "circle",
+            "rotationRange": [
+                -90,
+                90
             ],
-            "barCategoryGap": "20%",
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8
-            }
+            "rotationStep": 45,
+            "girdSize": 20,
+            "sizeRange": [
+                20,
+                80
+            ],
+            "data": [
+                {
+                    "name": "\u7279\u6717\u666e",
+                    "value": 0.8394295898200796,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(137,94,107)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u7f8e\u56fd",
+                    "value": 0.16837107002002485,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(95,150,121)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u603b\u7edf",
+                    "value": 0.08905310353420974,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(89,80,70)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u4e2d\u56fd",
+                    "value": 0.0564237205515656,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(5,29,71)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u98ce\u666f\u7ebf",
+                    "value": 0.05114194701441352,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(49,109,47)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u767d\u5bab",
+                    "value": 0.04875138237225149,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(100,158,15)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u5ddd\u666e",
+                    "value": 0.03565040010805169,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(6,61,3)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u4e16\u754c",
+                    "value": 0.0347318441794831,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(145,63,133)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u75c5\u6bd2",
+                    "value": 0.033179986433737575,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(44,6,132)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u7f8e\u4e3d",
+                    "value": 0.032842173254659546,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(25,139,114)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u7cdf\u7cd5",
+                    "value": 0.028989230634925443,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(119,74,1)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u4eba\u6c11",
+                    "value": 0.028480613371585486,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(45,39,3)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u75ab\u60c5",
+                    "value": 0.028134110258971175,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(65,30,1)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u9ed1\u4eba",
+                    "value": 0.027273630780989065,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(124,33,4)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u9a9a\u4e71",
+                    "value": 0.02720145375405567,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(110,64,24)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u8001\u7279",
+                    "value": 0.026737800081038765,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(37,151,79)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u519b\u961f",
+                    "value": 0.02549875970437873,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(31,34,120)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u7948\u7977",
+                    "value": 0.022634951453494038,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(24,64,116)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u4e0d\u9760",
+                    "value": 0.02088145257072316,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(150,108,55)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u56fd\u5bb6",
+                    "value": 0.020877075853717692,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(121,15,109)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u5927\u7b11",
+                    "value": 0.020166070776374254,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(1,97,59)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u4e00\u4e2a",
+                    "value": 0.01960522545219682,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(135,146,87)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u98ce\u666f",
+                    "value": 0.018904717627062625,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(149,146,144)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u7b11\u67c4",
+                    "value": 0.018384520872912525,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(74,112,81)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u8d5e\u8d5e",
+                    "value": 0.017825200054025846,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(109,30,17)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u7529\u9505",
+                    "value": 0.017825200054025846,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(48,18,78)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u52a0\u6cb9",
+                    "value": 0.017508802089801195,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(19,81,32)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u8bb0\u8005",
+                    "value": 0.01708526740807157,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(126,133,27)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u5efa\u56fd",
+                    "value": 0.017051766268307653,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(33,91,118)"
+                        }
+                    }
+                },
+                {
+                    "name": "\u5168\u4e16\u754c",
+                    "value": 0.016902276114363818,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(33,39,16)"
+                        }
+                    }
+                }
+            ]
         }
     ],
     "legend": [
         {
-            "data": [
-                "0\u6708\u60c5\u611f\u53d8\u5316"
-            ],
-            "selected": {
-                "0\u6708\u60c5\u611f\u53d8\u5316": true
-            },
+            "data": [],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -93,141 +334,18 @@
         },
         "borderWidth": 0
     },
-    "xAxis": [
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "data": [
-                "6\u67081\u65e5",
-                "6\u67082\u65e5",
-                "6\u67083\u65e5",
-                "6\u67084\u65e5",
-                "6\u67085\u65e5",
-                "6\u67086\u65e5",
-                "6\u67087\u65e5",
-                "6\u67088\u65e5",
-                "6\u67089\u65e5",
-                "6\u670810\u65e5",
-                "6\u670811\u65e5",
-                "6\u670812\u65e5",
-                "6\u670813\u65e5",
-                "6\u670814\u65e5",
-                "6\u670815\u65e5",
-                "6\u670816\u65e5",
-                "6\u670817\u65e5",
-                "6\u670818\u65e5",
-                "6\u670819\u65e5",
-                "6\u670820\u65e5",
-                "6\u670821\u65e5",
-                "6\u670822\u65e5",
-                "6\u670823\u65e5",
-                "6\u670824\u65e5",
-                "6\u670825\u65e5",
-                "6\u670826\u65e5",
-                "6\u670827\u65e5",
-                "6\u670828\u65e5",
-                "6\u670829\u65e5",
-                "6\u670830\u65e5",
-                ""
-            ]
-        }
-    ],
-    "yAxis": [
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            }
-        }
-    ],
     "title": [
         {
+            "text": "\u5934\u6761\u8bcd\u4e91\u56fe",
             "padding": 5,
-            "itemGap": 10
-        }
-    ],
-    "toolbox": {
-        "show": true,
-        "orient": "horizontal",
-        "itemSize": 15,
-        "itemGap": 10,
-        "left": "80%",
-        "feature": {
-            "saveAsImage": {
-                "show": true,
-                "title": "save as image",
-                "type": "png"
-            },
-            "restore": {
-                "show": true,
-                "title": "restore"
-            },
-            "dataView": {
-                "show": true,
-                "title": "data view",
-                "readOnly": false
-            },
-            "dataZoom": {
-                "show": true,
-                "title": {
-                    "zoom": "data zoom",
-                    "back": "data zoom restore"
-                }
+            "itemGap": 10,
+            "textStyle": {
+                "fontSize": 10
             }
-        }
-    },
-    "dataZoom": [
-        {
-            "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 20,
-            "end": 80,
-            "orient": "horizontal",
-            "zoomLock": false
-        },
-        {
-            "show": true,
-            "type": "inside",
-            "realtime": true,
-            "start": 20,
-            "end": 80,
-            "orient": "horizontal",
-            "zoomLock": false
         }
     ]
 };
-        chart_fcfd1ea37069400b929f19444b589eff.setOption(option_fcfd1ea37069400b929f19444b589eff);
+        chart_aeb1a7a5318849cc8245041d03cf505f.setOption(option_aeb1a7a5318849cc8245041d03cf505f);
     </script>
 </body>
 </html>

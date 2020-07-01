@@ -8,6 +8,7 @@
 import sys
 import jieba
 import jieba.analyse
+from operator import itemgetter
 import re
 sys.path.append("..")
 from Visualization.utils.common import *
@@ -15,8 +16,11 @@ from Visualization.dataProsc.readDbs import *
 from Visualization.utils.setting import FileFeaturePath
 
 
-def dataForPridic(mql_sheet, data_name, data_n=30):
-    mql = "select {} from {} limit 0, {}".format(data_name, mql_sheet, data_n)
+# k表示预测还是实际
+def dataForPridic(mql_sheet, data_name, k, key):
+    print(key)
+    a = str(key)
+    mql = "select {} from {} where topic = '{}' and predict = {}".format(data_name, mql_sheet, a, k)
     mysql = DbReader()
     a = mysql.ConTest()
     if a == -1:
@@ -52,8 +56,27 @@ def dataForWordCloud(name, key = ''):
     return keywords
 
 
+def getWeiboTop(name):
+    filename = "weibo/{}.csv".format(name)
+    data = list(readTxt(filename))
+    data1 = []
+    for i in range(len(data)):
+        try:
+            if i != 0:
+                data1.append(data[i].split(','))
+        except Exception as ex:
+            print(i)
+            continue
+    pic = []
+    for i in range(5):
+        kkk = []
+        kkk.append(data1[i][3])
+        kkk.append(data1[i][4])
+        pic.append(kkk)
+    print(pic)
+    return pic
+
+
 if __name__ == "__main__":
-    print("dataPro正常运行")
-    data = dataForPridic('emotion_val', 'emotion_val')
-    print(data)
-    dataForWordCloud('新冠疫情.csv', 'd')
+    getWeiboTop('trump')
+
